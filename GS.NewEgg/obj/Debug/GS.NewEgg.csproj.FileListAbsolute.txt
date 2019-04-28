@@ -1,0 +1,10 @@
+D:\Workplace\HS\src\APIS\GS.NewEgg\bin\Debug\GS.NewEgg.dll
+D:\Workplace\HS\src\APIS\GS.NewEgg\bin\Debug\GS.NewEgg.pdb
+D:\Workplace\HS\src\APIS\GS.NewEgg\obj\Debug\GS.NewEgg.dll
+D:\Workplace\HS\src\APIS\GS.NewEgg\obj\Debug\GS.NewEgg.pdb
+D:\Workplace\HS\src\APIS\GS.NewEgg\obj\Debug\GS.NewEgg.csprojResolveAssemblyReference.cache
+D:\GIT\NewEggAPI\GS.NewEgg\bin\Debug\GS.NewEgg.dll
+D:\GIT\NewEggAPI\GS.NewEgg\bin\Debug\GS.NewEgg.pdb
+D:\GIT\NewEggAPI\GS.NewEgg\obj\Debug\GS.NewEgg.csprojResolveAssemblyReference.cache
+D:\GIT\NewEggAPI\GS.NewEgg\obj\Debug\GS.NewEgg.dll
+D:\GIT\NewEggAPI\GS.NewEgg\obj\Debug\GS.NewEgg.pdb

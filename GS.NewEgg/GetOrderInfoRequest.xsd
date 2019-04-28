@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by as13 (EMBRACE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="NeweggAPIRequest">
+    <xs:annotation>
+      <xs:documentation>Comment describing your root element</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="IssueUser" type="xs:string" minOccurs="0"/>
+        <xs:element name="OperationType">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="GetOrderInfoRequest"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="RequestBody">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="PageIndex" type="xs:int" minOccurs="0"/>
+              <xs:element name="PageSize" type="xs:int" minOccurs="0"/>
+              <xs:element name="RequestCriteria">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="OrderNumberList" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element name="OrderNumber" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="SellerOrderNumberList" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element name="SellerOrderNumber" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>                   
+                    <xs:element name="Status" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:enumeration value="0"/>
+                          <xs:enumeration value="1"/>
+                          <xs:enumeration value="2"/>
+                          <xs:enumeration value="3"/>
+                          <xs:enumeration value="4"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="OrderDownloaded" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:enumeration value="0"/>
+                          <xs:enumeration value="1"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Type" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:enumeration value="0"/>
+                          <xs:enumeration value="1"/>
+                          <xs:enumeration value="2"/>
+                          <xs:enumeration value="3"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="VoidSoon" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:enumeration value="24"/>
+                          <xs:enumeration value="48"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="OrderDateFrom" type="xs:string" minOccurs="0"/>
+                    <xs:element name="OrderDateTo" type="xs:string" minOccurs="0"/>
+                    <xs:element name="CountryCode" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="AUS"/>
+                          <xs:enumeration value="NZL"/>
+                          <xs:enumeration value="GBR"/>
+                          <xs:enumeration value="IRL"/>
+                          <xs:enumeration value="NLD"/>
+                          <xs:enumeration value="POL"/>
+                          <xs:enumeration value="IND"/>
+                          <xs:enumeration value="SGP"/>
+                          <xs:enumeration value="USA"/>
+                          <xs:enumeration value="HKG"/>
+                          <xs:enumeration value="MAC"/>
+                          <xs:enumeration value="IDN"/>
+                          <xs:enumeration value="PHL"/>
+                          <xs:enumeration value="KOR"/>
+                          <xs:enumeration value="THA"/>
+                          <xs:enumeration value="BRA"/>
+                          <xs:enumeration value="CHL"/>
+						  <xs:enumeration value="CHN"/>
+                          <xs:enumeration value="COL"/>
+                          <xs:enumeration value="CRI"/>
+                          <xs:enumeration value="DOM"/>
+                          <xs:enumeration value="ECU"/>
+                          <xs:enumeration value="SLV"/>
+                          <xs:enumeration value="GTM"/>
+                          <xs:enumeration value="HND"/>
+                          <xs:enumeration value="JAM"/>
+                          <xs:enumeration value="MEX"/>
+                          <xs:enumeration value="NIC"/>
+                          <xs:enumeration value="PAN"/>
+                          <xs:enumeration value="ISR"/>
+                          <xs:enumeration value="SAU"/>
+                          <xs:enumeration value="TUR"/>
+                          <xs:enumeration value="ARE"/>
+                          <xs:enumeration value="AUT"/>
+                          <xs:enumeration value="BEL"/>
+                          <xs:enumeration value="BGR"/>
+                          <xs:enumeration value="DNK"/>
+                          <xs:enumeration value="FIN"/>
+                          <xs:enumeration value="FRA"/>
+                          <xs:enumeration value="DEU"/>
+                          <xs:enumeration value="GRC"/>
+                          <xs:enumeration value="HUN"/>
+                          <xs:enumeration value="ITA"/>
+                          <xs:enumeration value="LVA"/>
+                          <xs:enumeration value="LUX"/>
+                          <xs:enumeration value="MCO"/>
+                          <xs:enumeration value="NOR"/>
+                          <xs:enumeration value="PRT"/>
+                          <xs:enumeration value="SVK"/>
+                          <xs:enumeration value="SVN"/>
+                          <xs:enumeration value="ESP"/>
+                          <xs:enumeration value="SWE"/>
+                          <xs:enumeration value="CHE"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="PremierOrder" default="0" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:enumeration value="0"/>
+                          <xs:enumeration value="1"/>
+                          <xs:enumeration value="2"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
